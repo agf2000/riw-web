@@ -1,6 +1,8 @@
 {
-  "name": "riw-web",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+	"name": "riw-web",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository" {
+		"url": "https://github.com/agf2000/riw-web.git"
+	}
 }
