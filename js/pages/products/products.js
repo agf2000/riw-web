@@ -22,7 +22,7 @@
             controller: {
                 loadData: function (filter) {
                     return $.ajax({
-                        url: "http://localhost:3000/api/products",
+                        url: "http://api.riw.com.br/api/products",
                         type: 'GET',
                         contentType: "application/json; charset=utf-8",
                         beforeSend: setHeader,
@@ -45,7 +45,7 @@
                     });
                 },
                 deleteItem: function (item) {
-                    return $.ajax("http://localhost:3000/api/products/remove/" + item.itemId, {
+                    return $.ajax("http://api.riw.com.br/api/products/remove/" + item.itemId, {
                         method: "DELETE",
                         beforeSend: setHeader,
                         crossDomain: true,
@@ -58,7 +58,7 @@
                     });
                 },
                 insertItem: function (item) {
-                    return $.ajax("http://localhost:3000/api/products/add", {
+                    return $.ajax("http://api.riw.com.br/api/products/add", {
                         method: "POST",
                         beforeSend: setHeader,
                         crossDomain: true,
@@ -75,7 +75,7 @@
                     });
                 },
                 updateItem: function (item) {
-                    return $.ajax("http://localhost:3000/api/products/update", {
+                    return $.ajax("http://api.riw.com.br/api/products/update", {
                         method: "PUT",
                         beforeSend: setHeader,
                         crossDomain: true,

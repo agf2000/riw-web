@@ -15,7 +15,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "http://localhost:3000/api/login",
+                url: "http://api.riw.com.br/api/login",
                 data: postData,
                 contentType: "application/x-www-form-urlencoded",
                 success: function (responseData, textStatus, jqXHR) {
